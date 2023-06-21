@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mandali', sans-serif;
+    overflow:hidden;
+}
+/* **********HEADER********* */
+
+.headercontainer{
+    width:100%;
+    height:85px;
+}
+.headerparent{
+    display: flex;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    align-items: center;
+   }
+
+header .menu ul {
+list-style: none;
+
+}
+header .menu li {
+display:inline-block;
+padding-right: 2.5rem;
+    
+}
+
+header .menu li a {
+    text-decoration: none;
+    font-size: large;
+    color:hsl(120, 71%, 52%);
+    font-weight: bold;
+    padding:2.5rem;
+    margin-left: rem;
+        
+      }
+    
+/* *********HEADER BİTİŞ*********** */
+.content{
+    width: 100%;
+    height:100vh;      
+    }
+
+.aboutMeparent{
+    display:flex;
+    width:100%;
+    height:100%;
+    background-image: url(resim./erdemli.jpg);
+    background-position: 25% 75%;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    }
+   
+.text{
+    display:inline-block;
+    background-color: rgba(92, 168, 158, 0.796);
+    font-size: 20px;
+    padding: 20px 30px;
+    box-shadow:12px 20px rgba(24, 76, 159, 0.859);
+    width: 500px;
+    line-height: 1.3;  
+    margin-top: 30px;
+         }
+
+     h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        }
+
+    p{
+        text-align: justify;
+        text-indent: 30px;
+        padding-bottom: 15px;
+    }
+    
+    h1 p{
+    display: inline-block;
+} 
+
+@media screen and (max-width:824px) {
+
+    .headercontainer{
+        height: auto;
+    }
+    nav li{
+        width:100%;
+        display:block;
+        background-color: gray;        
+    }
+       
+     header .menu li a {
+     color:black;
+      }  
+
+      .headerparent{
+      text-align: center;
+      }
+  
+      
+      img{
+        max-width:100%;
+        height: auto;
+      }
+    
+      .aboutMeparent{
+        background-color: grey;
+      }
+        .text{
+        font-size: 15px;
+        margin-top: 3rem;
+        width: 80%;
+        line-height: 1.4rem;       
+        
+    
+    }
+}

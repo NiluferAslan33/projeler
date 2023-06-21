@@ -1,0 +1,178 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mandali', sans-serif;
+    background-color: rgb(188, 170, 163);
+    overflow: hidden;
+   
+}
+/* **********HEADER********** */
+.headercontainer{
+    width:100%;
+    height:75px; 
+}
+.headerparent{
+    display: flex;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    align-items: center;
+    }
+
+header .menu ul {
+list-style: none;
+
+}
+header .menu li {
+display:inline-block;
+    
+}
+
+header .menu li a {
+    text-decoration: none;
+    font-size: large;
+    color:hsl(120, 71%, 52%);
+    font-weight: bold;
+    padding:2.5rem;
+    margin-left:2.5rem;
+        
+     }
+    
+
+/*BLOG BAŞLANGICI */
+
+.itemtopcontainer{
+    width: 100%;
+    }
+.itemtopparent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+           
+}
+.itemtop2parent {
+    display:flex;
+ }
+
+.itemtop1parent{
+    display: flex;
+}
+
+#itemtop1{
+    display:inline-block;
+    width:25%;
+    padding-left: 2rem;
+}
+    
+#itemtop2{
+    display: inline-block;    
+    width:100%;
+}
+  
+.text{
+    width: 80%;    
+    display:block;
+    border: 1px solid goldenrod;
+    margin-left: 0;
+    line-height: 2rem;
+    border: 0.5rem solid  cornsilk;
+    box-shadow: 15px 25px;
+    background-color: chocolate;
+    padding:0.5rem;  
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+h2{
+    text-align: center;
+    padding: 5px;
+}
+
+.itemcontainer{
+width:100%;
+height:75vh;
+/* margin:0; */
+
+}
+
+.items{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    gap: 0.3rem;
+}
+
+img{
+    max-width:200px;
+    background-size:cover;   
+
+    }
+        
+@media screen and (max-width: 951px){
+
+    body{
+        overflow:scroll;
+    }
+        
+        .headercontainer{
+            height: auto;
+            }
+        nav li{
+            width:100%;
+            display:block;
+            }
+           
+        .headerparent{
+          text-align: center;
+          justify-self: center;
+          }
+      
+        img{
+        max-width:100%;
+        display:block;
+        height: auto;
+          } 
+        
+          .blogparent .itemparent .itemtop1parent .itemtop2parent{
+            display:block;
+          }
+
+         .text{
+            height:20vh;
+            width:80%;
+            font-size: 12px;
+            line-height: 0.9rem;
+            padding-top: 10px;
+            text-overflow: ellipsis;
+         } 
+         h1 {
+            margin-bottom: 0.7rem;
+         }
+         p{
+            margin-bottom: 0.4rem;
+         }
+                   
+       .items{
+        display: block; 
+                     
+       }
+            
+       .item img{
+        width:100%;
+        height:auto;
+        margin-top: 1rem;        
+       }    
+           
+}
+        
+@media screen and (max-width:382px){
+    .text{
+        height: autor;
+    }
+}
